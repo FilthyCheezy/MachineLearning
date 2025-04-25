@@ -35,13 +35,13 @@ def display_water_quality(prediction=None):
     col1, col2, col3, col4, col5, col6, col7 = st.columns([1, 1, 1, 2, 1, 1, 1])
     with col4:
         if prediction == "Clean":
-            st.image("2.png", width = 10, use_column_width=True)
+            st.image("2.png", width = 10, use_container_width=True)
             st.markdown("<div class='prediction-text'>🔵 Predicted Water Quality: <strong>Clean</strong></div>", unsafe_allow_html=True)
         elif prediction == "Dirty":
-            st.image("3.png", width = 10, use_column_width=True)
+            st.image("3.png", width = 10, use_container_width=True)
             st.markdown("<div class='prediction-text'>🔴 Predicted Water Quality: <strong>Dirty</strong></div>", unsafe_allow_html=True)
         else:
-            st.image("1.png", width = 10, use_column_width=True)
+            st.image("1.png", width = 10, use_container_width=True)
             st.markdown("<div class='prediction-text'>⚠️ <strong>Unable to classify</strong></div>", unsafe_allow_html=True)
 
 # Show prediction
